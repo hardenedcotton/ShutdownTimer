@@ -165,7 +165,7 @@ namespace ShutdownTimer
             if (TimeInSeconds == 0)
             {
                 timer1.Stop();
-                System.Diagnostics.Process.Start("shutdown");
+                System.Diagnostics.Process.Start("shutdown", "-s -t 0");
             }
 
 
